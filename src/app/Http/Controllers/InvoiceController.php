@@ -94,7 +94,7 @@ class InvoiceController extends Controller
         // 2 : FORCE DOWNLOAD
         // 3 : SAVE ON SERVER
         // $invoicr->outputPDF();
-        // $invoicr->outputPDF(1);
+        $invoicr->outputPDF(1);
         // $invoicr->outputPDF(2, "invoice.pdf");
         // $invoicr->outputPDF(3, __DIR__ . DIRECTORY_SEPARATOR . "invoice.pdf");
 
