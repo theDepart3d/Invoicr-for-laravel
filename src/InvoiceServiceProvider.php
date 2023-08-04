@@ -31,6 +31,7 @@ class InvoiceServiceProvider extends ServiceProvider
         // Publish files
         $this->publishes([
             __DIR__ . '/config/invoicr.php' => config_path('invoicr.php'),
+            __DIR__ . '/app/Http/Controllers/InvoiceController.php' => base_path('app/Http/Controllers/InvoiceController.php'),
             __DIR__ . '/app/Models/GenerateInvoice.php' => base_path('app/Models/GenerateInvoice.php'),
             __DIR__ . '/app/Models/invlib/' => base_path('app/Models/invlib/'),
         ], 'invoicr-config');
