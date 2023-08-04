@@ -28,6 +28,7 @@ class InvoiceServiceProvider extends ServiceProvider
      * @return void
      */
     public function boot() {
+        $this->loadRoutesFrom(__DIR__ . '/routes/web.php');
         // Publish files
         $this->publishes([
             __DIR__ . '/config/invoicr.php' => config_path('invoicr.php'),
