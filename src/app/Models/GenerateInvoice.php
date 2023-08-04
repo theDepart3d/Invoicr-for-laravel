@@ -18,20 +18,12 @@ class GenerateInvoice extends Model
     private $pathP = __DIR__ . DIRECTORY_SEPARATOR . "invlib" . DIRECTORY_SEPARATOR . "PDF" . DIRECTORY_SEPARATOR;
 
     // (B) FLAGS & TEMP
-    private $template = "simple"; // INVOICE TEMPLATE TO USE
+    private $template = config("invoicr.template"); // INVOICE TEMPLATE TO USE
     private $data = null; // TEMP DATA TO GENERATE INVOICE
 
     // (C) INVOICE DATA
     // (C1) COMPANY HEADER - CHANGE TO YOUR OWN!
-    private $company = [
-        "https://example.com/images/logo.png", // URL TO COMPANY LOGO, FOR HTML INVOICES
-        "/var/www/html/images/logo.png", // FILE PATH TO COMPANY LOGO, FOR PDF/DOCX INVOICES
-        "Company Name",
-        "Street Address, City, State, Zip",
-        "Phone: xxx-xxx-xxx | Fax: xxx-xxx-xxx",
-        "Email: someemail@example.com",
-        "Website: https://example.com"
-    ];
+    private $company = config("invoicr.company_info");
 
     // (C2) HEADERS - INVOICE #, DATE OF PURCHASE, DUE DATE
     private $head = [];
