@@ -31,5 +31,10 @@
         ]
       }
     },
+    "scripts": {
+        "post-update-cmd": [
+            "@php artisan vendor:publish --tag=invoicr-config --ansi --force"
+        ]
+    },
     "version": "0.0.1"
 }
