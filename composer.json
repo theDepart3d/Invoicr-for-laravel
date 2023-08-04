@@ -5,7 +5,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Thedepart3d\\InvoicrForLaravel\\app": "vendor/thedepart3d/InvoicrForLaravel/src/app"
+            "Thedepart3d\\InvoicrForLaravel\\app\\": "vendor/thedepart3d/InvoicrForLaravel/src/app"
         }
     },
     "authors": [
