@@ -20,16 +20,16 @@
       "illuminate/console": "^8|^9|^10",
       "illuminate/support": "^8|^9|^10"
     },
+    "config": {
+      "optimize-autoloader": true,
+      "sort-packages": true
+    },
     "extra": {
       "laravel": {
         "providers": [
           "thedepart3d\\InvoicrForLaravel\\InvoiceServiceProvider"
         ]
       }
-    },
-    "config": {
-      "optimize-autoloader": true,
-      "sort-packages": true
     },
     "version": "0.0.1"
 }

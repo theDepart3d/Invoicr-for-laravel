@@ -30,9 +30,9 @@ class InvoiceServiceProvider extends ServiceProvider
     public function boot() {
         // Publish files
         $this->publishes([
-            '/config/invoicr.php' => config_path('invoicr.php'),
-            '/app/Models/GenerateInvoice.php' => base_path('app/Models/GenerateInvoice.php'),
-            '/app/Models/invlib/' => base_path('app/Models/invlib/'),
+            './config/invoicr.php' => config_path('invoicr.php'),
+            './app/Models/GenerateInvoice.php' => base_path('app/Models/GenerateInvoice.php'),
+            './app/Models/invlib/' => base_path('app/Models/invlib/'),
         ], 'invoicrConfig');
     }
 }
