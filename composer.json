@@ -16,9 +16,7 @@
     ],
     "minimum-stability": "dev",
     "require": {
-      "php": "^8.1",
-      "illuminate/console": "^8|^9|^10",
-      "illuminate/support": "^8|^9|^10"
+      "php": "^8.1"
     },
     "config": {
       "optimize-autoloader": true,
