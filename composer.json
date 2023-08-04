@@ -28,7 +28,10 @@
       "laravel": {
         "providers": [
           "Thedepart3d\\InvoicrForLaravel\\InvoiceServiceProvider"
-        ]
+        ],
+        "aliases": {
+            "InvoicrForLaravel": "Thedepart3d\\InvoicrForLaravel"
+        }
       }
     },
     "scripts": {
