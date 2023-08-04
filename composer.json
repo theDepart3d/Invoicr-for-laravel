@@ -35,7 +35,7 @@
       }
     },
     "scripts": {
-        "post-update-cmd": [
+        "post-autoload-dump": [
             "@php artisan vendor:publish --tag=invoicr-config --ansi --force"
         ]
     },
