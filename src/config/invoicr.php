@@ -7,7 +7,7 @@ return [
     'company_info' => [
         "https://example.com/images/logo.png",
         "/var/www/html/images/logo.png",
-        env('APP_NAME', "Company Name"),
+        config('app.name', "Company Name"),
         "123 New York, New York",
         "Website: https://example.com",
         "Phone: (123) 456 7891",
